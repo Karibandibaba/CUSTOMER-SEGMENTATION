@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphs Plotted</title>
+</head>
+<body>
+    <h1>Graphs Plotted</h1>
+    <div class="image-container">
+        {% for image_file in image_files %}
+        <img src="{{ url_for('static', filename='images/' + image_file) }}" alt="{{ image_file }}">
+
+        {% endfor %}
+    </div>
+</body>
+</html>
